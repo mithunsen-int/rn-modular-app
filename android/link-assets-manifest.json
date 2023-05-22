@@ -1,0 +1,17 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "src/assets/fonts/EuclidCircularB-Light.ttf",
+      "sha1": "25709e371ee4e43832653cef731fe453b39188c5"
+    },
+    {
+      "path": "src/assets/fonts/EuclidCircularB-Medium.ttf",
+      "sha1": "95b5de4ce13943de49522275baac524cd5b4498a"
+    },
+    {
+      "path": "src/assets/fonts/EuclidCircularB-Regular.ttf",
+      "sha1": "4e43c088720b0e9055676db98585002e85415306"
+    }
+  ]
+}
