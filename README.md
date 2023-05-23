@@ -1,7 +1,7 @@
 
 # React native modular app
 
-A simple react-native boilerplate with to kickstart a mobile application.
+A simple react-native boilerplate with to kickstart a mobile application. Clone this repo to use the following features.
 
 
 ## Features
