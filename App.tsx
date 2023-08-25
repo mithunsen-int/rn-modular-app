@@ -8,6 +8,7 @@
 import type { PropsWithChildren } from 'react';
 import React from 'react';
 import {
+  Alert,
   SafeAreaView,
   ScrollView,
   StatusBar,
@@ -22,6 +23,7 @@ import {
 import AppButton from './src/components/AppButton';
 import { AppText } from './src/components/AppText';
 import Spacer from './src/components/Spacer';
+import BioAuthenticate from './src/utils/bioAuthHelper';
 
 type SectionProps = PropsWithChildren<{
   title: string;
@@ -38,15 +40,15 @@ function App(): JSX.Element {
   }
 
   return (
-    <SafeAreaView style={[backgroundStyle, {flex: 1}]}>
+    <SafeAreaView style={[backgroundStyle, { flex: 1 }]}>
       <StatusBar
         barStyle={isDarkMode ? 'light-content' : 'dark-content'}
         backgroundColor={backgroundStyle.backgroundColor}
       />
-      <View style={[backgroundStyle, {flexGrow: 1, padding: 10}]}>
+      <View style={[backgroundStyle, { flexGrow: 1, padding: 10 }]}>
         <ScrollView
-          contentInsetAdjustmentBehavior="automatic" 
-          contentContainerStyle={{alignItems: 'center'}}
+          contentInsetAdjustmentBehavior="automatic"
+          contentContainerStyle={{ alignItems: 'center' }}
         >
           <AppButton title='Large' />
           <AppButton title='Medium' size='medium' />
@@ -59,6 +61,12 @@ function App(): JSX.Element {
           <AppText textAlign='center' fontSize='LG'>A custom text component with LG font size.</AppText>
           <AppText textAlign='center'>A custom text component with default font size (MD).</AppText>
           <AppText textAlign='center' fontSize='SM'>This is a custom text component with SM font size.</AppText>
+
+          <AppButton title='Test Biometric' onPress={async () => {
+            const {success, message} = await BioAuthenticate();
+              Alert.alert('Biometric', message);
+            
+          }} />
         </ScrollView>
       </View>
     </SafeAreaView>
