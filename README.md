@@ -1,7 +1,7 @@
 
 # React native modular app
 
-A simple react-native boilerplate with to kickstart a mobile application. Clone this repo to use the following features.
+A simple react-native boilerplate to kickstart a mobile application. Clone this repo to use the following features.
 
 
 ## Features
@@ -11,13 +11,14 @@ A simple react-native boilerplate with to kickstart a mobile application. Clone 
 - Reusable Button component
 - Reusable Text component with a default font-family
 - Customisable color palette
-- A Spacer component for which can be used to apply blank spaces between components instead of margin (or padding).
-- Scale method makes the App look great on different screen sizes, different devices, based on your device's pixel ratio.
+- A Spacer component can apply blank spaces between components instead of margin (or padding).
+- The scale method makes the App look great on different screen sizes and devices based on pixel ratio.
+- A Biometric scanner is added to authenticate users using Fingerprint or FaceID.
 
 More features will be added soon.
 
 
 ## Screenshots
 
-![App Screenshot](https://i.ibb.co/G2kJh2Z/Simulator-Screenshot-i-Phone-14-2023-05-22-at-17-57-02.png)
+![App Screenshot](https://i.ibb.co/mHQGbfg/Simulator-Screenshot-i-Phone-14-2023-08-28-at-11-40-01.png)
 
